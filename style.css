@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5EFE6;
+    color: #333;
+}
+
+/* SCROLL SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: #000000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Parte superior do versículo */
+.header-top {
+    text-align: center;
+    padding: 8px 20px;
+    background: #111;
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+/* Parte principal */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff65;
+}
+
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url("imagem/eucreiobanner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 55%; /* ajuste aqui */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+
+.btn {
+    padding: 12px 35px;
+    border-radius: 30px;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #201e1ed5;
+    transform: scale(1.05);
+}
+.missao-text .btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* SEÇÕES */
+section {
+    padding: 120px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+/* MISSÃO */
+.missao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.missao img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+.missao-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* LISTA */
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.item {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.item span {
+    display: block;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+
+/* CONTATO */
+.contato {
+    background: #000000;
+    color: white;
+}
+
+.contato a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: #000000c9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ANIMAÇÕES */
+.reveal {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s cubic-bezier(.2,.65,.3,.9);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-item {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s cubic-bezier(.2,.65,.3,.9);
+}
+
+.reveal-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.impacto {
+    padding: 80px 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.impacto h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.impacto-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 250px;
+    transition: 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .missao {
+        flex-direction: column;
+    }
+
+    .missao-text {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+.mapa-container {
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
